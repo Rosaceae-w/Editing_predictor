@@ -53,12 +53,14 @@ python predict.py -f input.fa -o predictions.tsv -m c5
 
 The classifier is the same for all options; `-m` only changes the model used for `Editing_level`.
 
+The regression models differ only in the RNA-seq read-count threshold used to select training sites. `cN` was trained on sites with ≥ N reads.
+
 | `-m` | Description |
 |---|---|
-| `c3` (default) | TODO: describe |
-| `c5` | TODO: describe |
-| `c6` | TODO: describe |
-| `c10` | TODO: describe |
+| `c3` (default) | read count >= 3 |
+| `c5` | read count >= 5 |
+| `c6` | read count >= 6 |
+| `c10` | read count >= 10 |
 
 ## Output columns
 
