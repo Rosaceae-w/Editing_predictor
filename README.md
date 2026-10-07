@@ -74,6 +74,7 @@ The classifier and the regression model are trained separately. The regression m
 
 ## Input notes
 
-- Sequences should be exactly 101 nt, DNA or RNA (T or U), centered on the site of interest.
+- Sequences should be exactly 101 nt, centered on the site of interest (A).
+- Both DNA and RNA sequences are accepted.
 - Longer sequences are center-cropped to 101 nt; shorter ones are padded with N. A warning will be printed in both cases.
 - Non-ACGTU characters are encoded as all-zero (treated as unknown).
